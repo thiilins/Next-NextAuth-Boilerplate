@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "@rocketseat/eslint-config/next",
+    "next/core-web-vitals",
+    "prettier",
+    "next"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "semi": false,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "bracketSameLine": true,
+        "arrowParens": "avoid",
+        "endOfLine": "lf"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "@typescript-eslint/ban-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/no-anonymous-default-export": "off"
+  }
+}
